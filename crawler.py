@@ -57,7 +57,7 @@ def main():
 				print('\n[+] Connecting to {0}\nCTRL-C to next target.').format(ip)
 				port = 10001
 				try:
-					cox.connect((serv, port))
+					cox.connect((serv, port, 3))
 					shell()
 				except socket.error as e:
 					print('[-] Cant connect to {0}. Error {0}.').format(ip, e)
