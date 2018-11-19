@@ -64,7 +64,7 @@ def main():
 				pass
 	###funcoes
 def shell():
-    print 'Pressione 'c' para sair'
+    print 'Pressione "c" para sair'
     while True:
         a = '\x01'
         b = '\x0D'
