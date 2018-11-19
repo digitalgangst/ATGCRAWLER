@@ -19,12 +19,12 @@ a = """
 print a
 print 'RTFM > http://www.chipkin.com/files/liz/576013-635.pdf\n', 'Query(s): Gasolina, Fuel\n'
 #call(["rm", "-f", "result.csv", "2&>/dev/null"])
-key = '8PyzFw4KR6qo3z0qFUDUdtx1CENf6LlZ'
+key = 'mCUi0vMQXSxI2gAjLkVXhutrBnrxd0z8'
 model = raw_input('[+] Query> ')
 print('[+] Crawling {0}...').format(model)
 
 try:
-	key = '8PyzFw4KR6qo3z0qFUDUdtx1CENf6LlZ'
+	key = 'mCUi0vMQXSxI2gAjLkVXhutrBnrxd0z8'
 	api = shodan.Shodan(key)
 	query = model+''.join(sys.argv[1:])
 	result = api.search(query)
@@ -57,7 +57,7 @@ def main():
 				print('\n[+] Connecting to {0}\nCTRL-C to next target.').format(ip)
 				port = 10001
 				try:
-					cox.settimeout(3)
+					
 					cox.connect((serv, port))
 					shell()
 				except socket.error as e:
