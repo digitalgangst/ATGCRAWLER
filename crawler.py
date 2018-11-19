@@ -1,4 +1,4 @@
-import shodan, sys, socket
+import os, shodan, sys, socket
 from subprocess import call
 os.system('cls' if os.name == 'nt' else 'clear')
 a = """
@@ -17,8 +17,7 @@ a = """
 
 """
 print a
-print('RTFM > http://www.chipkin.com/files/liz/576013-635.pdf\n', 'Query(s): Gasolina, Fuel\n')
-time.sleep(3)
+print 'RTFM > http://www.chipkin.com/files/liz/576013-635.pdf\n', 'Query(s): Gasolina, Fuel\n'
 #call(["rm", "-f", "result.csv", "2&>/dev/null"])
 key = '8PyzFw4KR6qo3z0qFUDUdtx1CENf6LlZ'
 model = raw_input('[+] Query> ')
@@ -65,10 +64,13 @@ def main():
 				pass
 	###funcoes
 def shell():
+    print 'Pressione 'c' para sair'
     while True:
         a = '\x01'
         b = '\x0D'
         mess = (a + raw_input("> " ))
+	if mess = 'c':
+		cox.close()
         if len(mess) < 2:
             mess = (a + raw_input("> " ))
         else:
@@ -78,8 +80,8 @@ def shell():
                 exit(1)
 
         cox.send(mess + b)
-		print '\n'
-		print(cox.recv(16384))
-		print(cox.recv(16384))
+	print '\n'
+	print(cox.recv(16384))
+	print(cox.recv(16384))
 if __name__ == '__main__':
 	main()
