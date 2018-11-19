@@ -37,6 +37,8 @@ try:
 		with open(file, 'a') as saver:
 			saver.write(ips+'\n')
 		print('[+] Saved at result.csv file.')
+		os.system('cls' if os.name == 'nt' else 'clear')
+
 
 except Exception as e:
 	print('Error {0}').format(e)
