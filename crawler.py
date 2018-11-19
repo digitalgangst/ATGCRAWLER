@@ -69,7 +69,7 @@ def shell():
         a = '\x01'
         b = '\x0D'
         mess = (a + raw_input("> " ))
-	if mess = 'c':
+	if mess == 'c':
 		cox.close()
         if len(mess) < 2:
             mess = (a + raw_input("> " ))
