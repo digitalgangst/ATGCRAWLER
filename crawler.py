@@ -64,13 +64,10 @@ def main():
 				pass
 	###funcoes
 def shell():
-    print 'Pressione "c" para sair'
     while True:
         a = '\x01'
         b = '\x0D'
         mess = (a + raw_input("> " ))
-	if mess == 'c':
-		cox.close()
         if len(mess) < 2:
             mess = (a + raw_input("> " ))
         else:
